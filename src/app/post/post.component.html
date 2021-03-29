@@ -1,6 +1,6 @@
 
 <div class="card-text">
-<p>{{post}} - <span class="font-weight-light">{{user}}</span></p>
+<p>{{post.post}} - <span class="font-weight-light">{{post.user}}</span></p>
 
 </div>
 <div>
@@ -13,6 +13,6 @@
     <button class="btn btn-secondary" (click)="commenta(comment.value)" placeholder="commenta il post">commenta</button>
 </div>
 
-<div *ngFor="let c of commentList">
+<div *ngFor="let c of post.commentList">
     {{c}}
 </div>
